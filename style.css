@@ -14,13 +14,33 @@ body {
     margin: 8rem auto;
 }
 
+@keyframes floatImage {
+    0% {
+        transform: translate(-2%, 1%);
+    }
+
+    33% {
+        transform: translate(0%, 0%);
+    }
+
+    66% {
+        transform: translate(2%, -1%);
+
+    }
+
+    100% {
+        transform: translate(-2%, 1%)
+    }
+}
+
 .logoContainer {
     display: flex;
     margin-bottom: 2rem;
     width: 80%;
     justify-content: center;
-
+    animation: floatImage ease-in-out 7s infinite, scale 1.5s ease-out;
 }
+
 
 .logoContainer div {
     padding-right: 3rem;
