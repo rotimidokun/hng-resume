@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+}
+
+.logoContainer {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 80%;
+    justify-content: center;
+
+}
+
+.logoContainer div {
+    padding-right: 3rem;
+}
+
+.zuriLogo img {
+    height: 20px;
+}
+
+.hngLogo img {
+    height: 30px;
+}
+
+.i4gLogo img {
+    height: 30px;
+}
+
+.resumeContainer {
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    box-shadow: 2px -1px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+.introContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem 2rem;
+    background-color: #2f5496;
+    color: white; 
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 1.65rem;
+}
+
+.profileLinks {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;  
+}
+
+.profileLinks p {
+    padding-bottom: 0.7rem;
+    color: white;    
+}
+
+.profileLinks a {
+    text-decoration-color:white;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    align-items: flex-end;
+}
+
+.contactInfo p{
+    padding-bottom: 0.7rem;
+}
+
+h3 {
+    color: #2f5496;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+.resumeBodyContainer {
+    padding: 3rem 4rem 5rem 4rem;
+}
+
+.resumeBodyContainer > p {
+    font-size: 14px;
+}
+
+.roleDescription {
+    list-style-type: square;
+    padding-left: 3rem;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.dates {
+    padding-bottom: 4px;
+}
+
+.dates i{
+    font-size: 12px; 
+}
+
+.projects {
+    padding-bottom: 9px;
+}
+
+.project-links {
+    color: #2f5496;
+}
+
+.volunteer-title {
+    padding-bottom: 4px;
+}
+
+.volunteer-title i {
+    font-size: 12px; 
+}
+
+
+
+@media screen and (max-width: 520px) {
+    body {
+        margin: 4rem auto;
+    }
+
+    .resumeContainer {
+        width: 90%
+    }
+
+    .name {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    h3 {
+        padding-top: 4px;
+    }
+}
+
+
+
+@media screen and (max-width: 798px){
+
+    .logoContainer {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 3rem;
+    }
+
+    .logoContainer div {
+    padding-bottom: 1rem;
+    }
+    
+    .introContainer {
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .profileLinks {
+        align-items: center;
+    }
+
+    .profileLinks p {
+        padding-right: 1rem;
+    }
+
+    .contactInfo {
+        align-items: center;
+    }
+
+    .contactInfo p {
+        padding-right: 1rem;
+    }
+
+    .name {
+        padding: 0.8rem 0 1.2rem 0;
+    }
+};
+
